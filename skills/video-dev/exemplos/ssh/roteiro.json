@@ -1,0 +1,14 @@
+[
+  "Toda vez que você digita SSH no terminal e cai dentro de um servidor do outro lado do mundo, acontece uma coisa bem engenhosa. Bora entender o que é o SSH, qual problema ele resolve, e como ele funciona por baixo dos panos.",
+  "Primeiro, o problema. Lá nos anos noventa, pra acessar uma máquina remota, a gente usava o Telnet. Funcionava, mas tinha um detalhe terrível: tudo era enviado em texto puro. Seu usuário, sua senha, cada comando que você digitava.",
+  "E a internet não é um cabo direto entre você e o servidor. Seus dados passam por roteadores, provedores, redes Wi-Fi de café. Qualquer um no meio do caminho podia simplesmente ler tudo. Isso se chama ataque man-in-the-middle.",
+  "Em mil novecentos e noventa e cinco, depois de um ataque que roubou milhares de senhas numa universidade na Finlândia, o pesquisador Tatu Ylönen criou o SSH: Secure Shell. A ideia era simples: fazer o mesmo que o Telnet, mas com tudo criptografado.",
+  "Na prática, o SSH cria um túnel criptografado entre o seu computador, o cliente, e o servidor. Quem estiver olhando de fora só vê bytes embaralhados. Mas pra montar esse túnel, ele passa por três etapas.",
+  "Etapa um: a conexão. O cliente conecta na porta vinte e dois do servidor, e os dois negociam quais algoritmos vão usar: de criptografia, de troca de chaves, e de verificação de integridade.",
+  "Etapa dois: combinar um segredo. Aqui entra a mágica do Diffie-Hellman. Cliente e servidor trocam alguns números públicos e, com um pouco de matemática, cada um chega na mesma chave secreta. Sem que essa chave nunca tenha passado pela rede.",
+  "Nessa hora, o servidor também prova quem ele é, assinando a troca com a chave do host. Sabe aquela mensagem de fingerprint na primeira conexão? É o seu computador perguntando se você confia nesse servidor. Daí pra frente, ele lembra, no arquivo known hosts.",
+  "Etapa três: provar quem é você. Dá pra usar senha, que agora já vai criptografada. Mas o jeito recomendado é usar um par de chaves: uma chave privada, que fica só no seu computador, e uma chave pública, que você coloca no servidor.",
+  "O servidor manda um desafio, seu computador assina com a chave privada, e o servidor confere usando a chave pública. Se bater, você entra. E o melhor: a chave privada nunca sai da sua máquina. Não tem senha pra ser roubada.",
+  "E o SSH vai muito além do terminal. Quando você dá git push no GitHub, é SSH. Quando copia arquivos com S C P, é SSH. Dá até pra criar túneis e redirecionar portas, pra acessar serviços internos com segurança.",
+  "Então, resumindo: o SSH resolveu o problema de conversar com máquinas remotas por uma rede insegura. Conexão, troca de chaves, e autenticação. Três etapas. E tudo isso acontece em menos de um segundo, toda vez que você digita SSH."
+]

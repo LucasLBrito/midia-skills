@@ -1,0 +1,12 @@
+# Criar vídeos, falas e trilhas
+edge-tts>=7
+pillow>=10.1
+imageio-ffmpeg>=0.5
+numpy>=1.26
+
+# Transcrever vídeo/áudio (usadas pelo plugin watch-video)
+faster-whisper>=1.1
+av<16          # PyAV 16+ quebra o faster-whisper 1.2 ("metadata_errors")
+yt-dlp
+imagehash
+pytesseract    # OCR opcional; precisa também do programa Tesseract

@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+
+# saídas geradas ao usar as skills (nunca versionar)
+saida/
+audio/
+trilha/
+trilhas/
+preview*/
+*.mp4
+*.mp3
+*.wav
+*.m4a
+*.png
+*.jpg
+
+# segredos
+.env
+credentials.json

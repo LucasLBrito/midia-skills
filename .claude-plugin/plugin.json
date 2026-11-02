@@ -1,0 +1,18 @@
+{
+  "name": "midia-skills",
+  "displayName": "Mídia Skills (pt-BR)",
+  "version": "1.0.0",
+  "description": "Skills em português para criar vídeos explicativos verticais (animação + narração + trilha, tudo em Python), gerar falas e trilhas, e transcrever vídeo, áudio e imagem offline.",
+  "license": "MIT",
+  "keywords": [
+    "video",
+    "tts",
+    "narracao",
+    "trilha",
+    "transcricao",
+    "whisper",
+    "ocr",
+    "shorts",
+    "pt-br"
+  ]
+}

@@ -1,0 +1,16 @@
+[
+  "Boas práticas de versionamento com Git e GitHub, num passo a passo pra você seguir junto. Cada comando vai aparecer na tela. Se precisar, pausa o vídeo, digita no seu terminal, e continua.",
+  "Passo um: dizer pro Git quem é você. Rode git config com a opção global pra definir seu nome, e depois seu e-mail. Use o mesmo e-mail da sua conta do GitHub. E já defina main como o nome da branch principal.",
+  "Passo dois: criar o repositório. Crie uma pasta pro projeto, entre nela, e rode git init. Pronto: a partir de agora, o Git acompanha tudo que acontece nessa pasta.",
+  "Passo três, e esse é importante: o arquivo ponto gitignore. Ele diz o que o Git deve ignorar. Coloque ali as dependências, como node modules, a pasta de build, e principalmente o arquivo ponto env. Senha e chave de API nunca vão pro repositório.",
+  "Passo quatro: o primeiro commit. Use git status pra ver o que mudou. Depois, git add pra preparar os arquivos. E git commit, com uma mensagem que explica o que foi feito.",
+  "E por falar em mensagem: escreva commits claros. Um padrão muito usado é o Conventional Commits: feat pra funcionalidade nova, fix pra correção, docs pra documentação. E faça commits pequenos: uma mudança por commit. Nada de mensagem tipo: ajustes.",
+  "Passo cinco: subir pro GitHub. Crie um repositório vazio no site, sem README. Depois, conecte com git remote add origin, usando o endereço SSH do repositório. E rode git push, traço u, origin main.",
+  "Passo seis: nunca trabalhe direto na main. Pra cada tarefa, crie uma branch nova, com git switch traço c. Use nomes que dizem o que ela faz: feat barra login, fix barra cálculo do frete.",
+  "Passo sete: trabalhe na branch. Edite os arquivos, adicione, e faça seus commits normalmente, quantos precisar. Quando terminar, envie a branch pro GitHub, com git push traço u, origin, e o nome da branch.",
+  "Passo oito: abra um Pull Request. No GitHub, clique em Compare and pull request, escreva o que mudou e por quê, e peça a revisão de alguém do time. Se tiver o GitHub CLI, dá pra fazer direto do terminal, com gh pr create.",
+  "Depois que o Pull Request for aprovado e mesclado, volte pra main, rode git pull pra trazer as mudanças, e apague a branch que já foi usada, com git branch traço d. Assim a main fica sempre estável.",
+  "Passo nove: mantenha sua branch atualizada. Se a main andou enquanto você trabalhava, rode git fetch, e depois git rebase origin main. Assim os conflitos aparecem cedo, e pequenos, e não lá no final.",
+  "Passo dez: marque as versões com tags. Use versionamento semântico: major, minor e patch. Crie a tag com git tag traço a, e envie com git push origin, e o nome da tag. No GitHub, ela vira uma release.",
+  "Resumindo: configure sua identidade, use o gitignore, faça commits pequenos e claros, uma branch por tarefa, Pull Request com revisão, main sempre estável, e tags pra cada versão. Salva esse vídeo, e usa como checklist no seu próximo projeto."
+]

@@ -1,0 +1,13 @@
+{
+  "name": "midia-skills",
+  "owner": {
+    "name": "midia-skills"
+  },
+  "plugins": [
+    {
+      "name": "midia-skills",
+      "source": "./",
+      "description": "Vídeos explicativos 9:16, falas, trilhas e transcrição de vídeo/áudio/imagem, em português."
+    }
+  ]
+}
